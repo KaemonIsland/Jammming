@@ -27,7 +27,7 @@ const Spotify = {
   },
 
   search(term) {
-    let accessToken = Spotify.getAccessToken();
+    const accessToken = Spotify.getAccessToken();
 
     return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, 
     {headers: {Authorization: `Bearer ${accessToken}`}})
@@ -47,7 +47,7 @@ const Spotify = {
   },
 
   savePlaylist(playlistName, trackUri) {
-    if (!playlistName || !trackUri.length) {
+    if (playlistName === false || trackUri.length === false) {
       return;
     }
     const accessToken = Spotify.getAccessToken();

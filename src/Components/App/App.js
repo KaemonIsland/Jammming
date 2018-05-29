@@ -64,7 +64,7 @@ class App extends Component {
       <div>
         <h1>Ja<span className="highlight">mmm</span>ing</h1>
         <div className="App">
-          <SearchBar onSearch={this.search} />
+          <SearchBar onSearch={this.search}/>
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} 
                             onAdd={this.addTrack} 
@@ -72,7 +72,7 @@ class App extends Component {
             <Playlist playlistTracks={this.state.playlistTracks} 
                       onRemove={this.removeTrack} 
                       onNameChange={this.updatePlaylistName}
-                      onSave={this.savePlaylist} />
+                      onSave={this.savePlaylist}/>
           </div>
         </div>
       </div>
