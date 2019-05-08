@@ -46,11 +46,15 @@ const App = () => {
         <div className="App-playlist">
           <SearchResults searchResults={results} 
                           onAdd={addTrack} 
-                          onSave={savePlaylist}/>
+                          onSave={savePlaylist}
+                          playlist={playlistName}
+                          />
           <Playlist playlistTracks={playlistTracks} 
                     onRemove={removeTrack} 
                     onNameChange={updatePlaylistName}
-                    onSave={savePlaylist}/>
+                    onSave={savePlaylist}
+                    playlist={playlistName}
+                    />
         </div>
       </div>
     </main>
