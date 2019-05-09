@@ -32,5 +32,6 @@
   "devDependencies": {
     "git-scripts": "^0.2.1",
     "surge": "^0.20.4"
-  }
+  },
+  "homepage" : "http://kaemonisland.github.io/jammming"
 }
