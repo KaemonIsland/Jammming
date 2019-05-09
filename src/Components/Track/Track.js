@@ -15,9 +15,9 @@ const Track = ({track, isRemoval, onAdd, onRemove}) => {
         <h3>{track.name}</h3>
         <p>{track.artist} | {track.album}</p>
       </div>
-      <a className="Track-action" onClick={renderAction()}>
+      <button className="Track-action" onClick={renderAction()}>
         {isRemoval ? '-' : '+'}
-      </a>
+      </button>
     </div>
   );
 }

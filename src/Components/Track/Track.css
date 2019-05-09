@@ -6,9 +6,13 @@
 
 .Track-action {
   cursor: pointer;
-  padding: .5rem;
+  padding: .3rem .5rem;
   font-size: 1.05rem;
   transition: color .25s;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 10rem;
 }
 
 .Track-action:hover {
