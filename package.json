@@ -14,7 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pre-push": "surge --project ./ --domain kaemon-jammming.surge.sh"
   },
   "browserslist": {
     "production": [
@@ -27,5 +28,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.20.4"
   }
 }
